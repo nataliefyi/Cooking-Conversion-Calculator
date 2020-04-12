@@ -28,8 +28,8 @@ $(function() {
     $('<input>').attr('type', 'text').attr('id', 'userInput').appendTo('#input');
     $('<button>').attr('id', 'convert').text('Convert').appendTo('#input');
 
-    let convertFromValue = $('select#convertFromSelect option').filter(':selected').val();
-    let convertToValue = $('select#convertToSelect option').filter(':selected').val();
+    let convertFromValue = $('#convertFromSelect option').filter(':selected').val();
+    let convertToValue = $('#convertToSelect option').filter(':selected').val();
 
 
     $('#convert').click(function(){
